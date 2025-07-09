@@ -30,8 +30,6 @@ function App() {
         email: data.email || "",
         age: Math.floor(Math.random() * 30) + 20,
       };
-      console.log(userId);
-      console.log(userDetails);
 
       setUser(userDetails);
     };

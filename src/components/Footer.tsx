@@ -1,5 +1,10 @@
-const Footer = ({ setUserId, setHasMoreUsers }) => {
-  const handleRestClick = (e: React.MouseEventHandler<HTMLButtonElement>) => {
+interface FooterProp {
+  setUserId: (number: number) => void;
+  setHasMoreUsers: (boolean: boolean) => void;
+}
+
+const Footer = ({ setUserId, setHasMoreUsers }: FooterProp) => {
+  const handleRestClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     setUserId(1);
     setHasMoreUsers(true);

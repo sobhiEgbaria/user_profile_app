@@ -3,11 +3,11 @@ import type { User } from "../App";
 
 interface UserProp {
   user: User;
-  setUserId: (prev: number) => number;
+  setUserId: React.Dispatch<React.SetStateAction<number>>;
 }
 
 const Form = ({ user, setUserId }: UserProp) => {
-  const handelSubmit = (e: React.MouseEventHandler<HTMLButtonElement>) => {
+  const handelSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     setUserId((prev: number) => prev + 1);
   };
