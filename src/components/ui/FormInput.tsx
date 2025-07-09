@@ -7,6 +7,7 @@ const FormInput = ({ label, type, value, name }) => {
         {label}
       </label>
       <input
+        readOnly
         type={type}
         name={name}
         className="w-full p-2 border border-gray-300 rounded"
