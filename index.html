@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+===================================================================================
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <title>User Profile App</title>
+  </head>
+  <body>
+    <main class="min-h-screen bg-gray-900 p-6">
+      <h1 class="text-3xl font-bold text-center mb-8 text-white">
+        User Profile App
+      </h1>
+
+      <p class="text-center text-white">Loading user data...</p>
+
+      <form class="max-w-md mx-auto bg-white my-4 p-6 rounded-lg shadow-md">
+        <h2 class="text-xl font-semibold mb-4">Edit User Profile</h2>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Name</label
+          ><input
+            type="text"
+            name="name"
+            class="w-full p-2 border border-gray-300 rounded"
+            value="Leanne Graham"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700 mb-1"
+            >Email</label
+          ><input
+            type="email"
+            name="email"
+            class="w-full p-2 border border-gray-300 rounded"
+            value="Sincere@april.biz"
+          />
+        </div>
+
+        <div class="mb-4">
+          <label class="block text-sm font-medium text-gray-700 mb-1">Age</label
+          ><input
+            type="number"
+            name="age"
+            class="w-full p-2 border border-gray-300 rounded"
+            value="35"
+          />
+        </div>
+
+        <button
+          class="bg-orange-500 hover:bg-orange-600 transition-colors text-white font-bold py-2 px-4 rounded"
+        >
+          Next User
+        </button>
+      </form>
+
+      <section class="text-center">
+        <p class="text-lg mb-4 text-white">
+          No more users available. You have reached the end of the list.
+        </p>
+        <button
+          class="bg-green-500 hover:bg-green-600 transition-colors text-white font-bold py-2 px-4 rounded"
+        >
+          Reset and Start Over
+        </button>
+      </section>
+    </main>
+  </body>
+</html>
