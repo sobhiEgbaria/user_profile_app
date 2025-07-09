@@ -1,7 +1,7 @@
 interface FormInputProp {
   label: string;
   type: string;
-  value: string;
+  value: string | number;
   name: string;
 }
 const FormInput = ({ label, type, value, name }: FormInputProp) => {
