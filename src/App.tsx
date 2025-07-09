@@ -22,7 +22,7 @@ function App() {
     }
     const fetchUserData = async () => {
       const res = await fetch(
-        `http://jsonplaceholder.typicode.com/users/${userId}`
+        `https://jsonplaceholder.typicode.com/users/${userId}`
       );
       const data = await res.json();
       const userDetails: User = {
